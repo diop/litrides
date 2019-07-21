@@ -15,7 +15,7 @@ router.get('/:id', async function(request, response, next) {
     const invoiceId = request.params.id
     client.get_invoice(invoiceId)
     .then(invoice => {
-        if(invoice == 'complete' || invoice.status == 'paid') {
+        if(invoice.status == 'complete' || invoice.status == 'paid') {
             // Deliver ride to customer
             response.render('payment')
         } else {
