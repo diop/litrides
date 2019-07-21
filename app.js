@@ -4,9 +4,9 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 
-
 const indexRouter = require('./routes/index')
 const invoiceRouter = require('./routes/invoice')
+const vehicleRouter = require('./routes/vehicle')
 
 const app = express()
 
@@ -21,6 +21,7 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', indexRouter)
+app.use('/vehicle', vehicleRouter)
 app.use('/invoice', invoiceRouter)
 
 // catch 404 and forward to error handler
