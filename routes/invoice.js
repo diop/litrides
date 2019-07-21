@@ -17,9 +17,9 @@ router.get('/:id', async function(request, response, next) {
     .then(invoice => {
         if(invoice == 'complete' || invoice.status == 'paid') {
             // Deliver ride to customer
-            response.end('<html>Thank you!</html>')
+            response.render('payment')
         } else {
-            response.end('<html>Not paid!</html')
+            response.render('failure')
         }
     })
     .catch(err => {
