@@ -3,6 +3,7 @@ p Litrides is a Bitcoin Lightning powered rideshare platform
 div 
     h2 Submit Lightning Payments
     form(method='post', action='/invoice')
+        h2 Rides
         p
             input(type="radio", name="product", value='{"name": "2018 Audi A5", "price": 1.0}')
             label Litpool - $1.0
@@ -15,6 +16,20 @@ div
         p
             input(type="radio", name="product", value='{"name": " 2016 Tesla Model S", "price": 1.0}')
             label LitCargo - $1.0
+
+        h2 Customer Information
+        p
+            input(type="email", name="email", placeholder="Email Address")
+        p
+            input(type="text", name="name", placeholder="Full Name")
+        p
+            input(type="text", name="address", placeholder="Mailing Address")
+        p
+            input(type="text", name="city", placeholder="City")
+        p
+            input(type="text", name="zipcode", placeholder="Zip Code") 
+        p
+            input(type="text", name="country", placeholder="Country")
     
         p
             input(type="submit", name="Reserve Car")

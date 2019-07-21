@@ -15,12 +15,12 @@ router.get('/', function(request, response, next) {
   request.render('index', { title: 'Bitcoin Lightning', message: "Welcome to Litrides" })
 })
 
-router.get('/login', (request, response) => {
-  const authURL = client.getAuthUrl()
+// router.get('/login', (request, response) => {
+//   const authURL = client.getAuthUrl()
 
-  response.render('login', {
-    url: authURL
-  })
-})
+//   response.render('login', {
+//     url: authURL
+//   })
+// })
 
 module.exports = router
