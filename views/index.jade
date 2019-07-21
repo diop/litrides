@@ -1,0 +1,17 @@
+h1=message
+p Litrides is a Bitcoin Lightning powered ride hailing platform
+div 
+    h2 Submit payments
+    form(method='post', action='/invoice')
+        p
+            input(type="radio", name="product", value='{"name": "LitPool", "price": 1.0}')
+            label Litpool - $0.5
+        p
+            input(type="radio", name="product", value='{"name": "LitX", "price": 1.0}')
+            label LitX - $1.0
+        p
+            input(type="radio", name="product", value='{"name": "LitCargo", "price": 1.0}')
+            label LitCargo - $2.0
+    
+        p
+            input(type="submit", name="submit")
