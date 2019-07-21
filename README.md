@@ -38,9 +38,9 @@ Luckily, someone in my social media circle recommended Litrides to me. I don't n
 * [X] [Bitcoin Lightning](https://lightning.network/)
 * [X] [Lightning Network White Paper](https://lightning.network/lightning-network-paper.pdf)
 * [X] [BTCPay Server](https://btcpayserver.org/)
+* [X] [Bitpay Invoicing](https://bitpay.com/api#resource-invoices)
 * [X] [NodeJS](https://nodejs.org/en/)
 * [X] [Heroku](heroku.com)
 * [X] [Blue Wallet](https://bluewallet.io/)
-
 
 © Copyright 2019 Fodé Diop
