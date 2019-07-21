@@ -16,10 +16,19 @@ Litrides is a proof of concept to show that the Lightning Network invoicing syst
 
 ## `User Journey`
 ```
-* My name is Alice and I'm a self employed Software Developer. Unfortunaltely, projects have been slow to come as of late and I need to make some extra money to cover my bills. I recently heard about this service called Litrides, where I can rent my car to other invidual and earn a healty amount of crypto currencies. I visited Litrides, signed for an account and made my vehicle available  for short term rent.
+My name is Demba. I'm West Africa and here we have a hard time getting access to credit cards. It's been really difficult and expensive trying to find rides to Job Interviews. 
+I recently came across and ad about being able to rent a card from an invidual without the need for a credit card. They use Bitcoin whcih is an international currency. I signed up for an account, and now I can make it to any job interview on time. The future is looking bright!
 ```
 ```
-* My name is Bob and I have bad credit. For that reason it's been impossible for me to get an account at Turo or GetAround. Luckily, someone in my social media circle recommended Litrides to me. I don't need a credit card to participate. A little bit of Bitcoin will suffice.
+My name is Alice and I'm a self employed Software Developer. Unfortunaltely, projects have been slow to come as of late and I need to make some extra money to cover my bills.
+
+I recently heard about this service called Litrides, where I can rent my car to other invidual and earn a healty amount of crypto currencies. 
+
+I visited Litrides, signed for an account and made my vehicle available  for short term rent.
+```
+```
+My name is Bob and I have bad credit. For that reason it's been impossible for me to get an account at Turo or GetAround. 
+Luckily, someone in my social media circle recommended Litrides to me. I don't need a credit card to participate. A little bit of Bitcoin will suffice.
 ```
 
 ## Technology
