@@ -1,4 +1,5 @@
 'use strict'
+require('dotenv').config()
 const express = require('express')
 const router = express.Router()
 const smartcar = require('smartcar')
@@ -11,10 +12,10 @@ const client = new smartcar.AuthClient({
   testMode: true,
 })
 
-router.get('/login', (request, response) => {
+router.get('/authorize', (request, response) => {
   const authURL = client.getAuthUrl()
 
-  response.render('login', {
+  response.render('authorize', {
     url: authURL
   })
 })

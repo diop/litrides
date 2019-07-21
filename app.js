@@ -6,7 +6,7 @@ const logger = require('morgan')
 
 const indexRouter = require('./routes/index')
 const invoiceRouter = require('./routes/invoice')
-const vehicleRouter = require('./routes/vehicle')
+const authorizationRouter = require('./routes/authorize')
 
 const app = express()
 
@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/css/'))
 
 app.use('/', indexRouter)
-app.use('/vehicle', vehicleRouter)
+app.use('/authorize', authorizationRouter)
 app.use('/invoice', invoiceRouter)
 
 // catch 404 and forward to error handler
