@@ -36,8 +36,8 @@ router.get('/exchange', (request, response) => {
 
 router.get('/vehicle', (request, response) => {
   return smartcar.getVehicleIds(access.accessToken)
-    .then(datas => {
-      return vehicle.info()
+    .then(data => {
+      return data.vehicles
     })
     .then(vehicleIds => {
       const vehicle = new smartcar.Vehicle(vehicleIds[0], access.accessToken)
