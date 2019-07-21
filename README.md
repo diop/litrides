@@ -1,3 +1,5 @@
+![Litrides](public/images/litrides.png)
+
 ## `Hack Mobility 2019`
     * TRACK 2 | Equitable | Sponsor: eBay Motors
 ```
