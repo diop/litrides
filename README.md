@@ -9,4 +9,12 @@ From ride-sharing to better cheaper transit options, we can’t wait to see what
 ## Project: Litrides
 Bitcoin Lightning powered ride-share.
 
+## Technology
+* [X] [Smartcar API](https://smartcar.com/product/lock-unlock/)
+* [X] [Bitcoin Lightning](https://lightning.network/)
+* [X] [BTCPay Server](https://btcpayserver.org/)
+* [X] [NodeJS](https://nodejs.org/en/)
+* [X] [Heroku](heroku.com)
+* [X] [Blue Wallet](https://bluewallet.io/)
+
 © Copyright 2019 Fodé Diop
