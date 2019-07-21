@@ -1,13 +1,26 @@
-## Hack Mobility 2019
+## `Hack Mobility 2019`
     * TRACK 2 | Equitable | Sponsor: eBay Motors
 ```
 How can we make transportation more accessible to everyone in society? 
 From ride-sharing to better cheaper transit options, we can’t wait to see what you build.
 ```
-[https://hackmobility-2019.devpost.com/](https://hackmobility-2019.devpost.com/)
 
-## Project: Litrides
-Bitcoin Lightning powered ride-share.
+## `Project: Litrides`
+Bitcoin Lightning powered ride-share: [https://litrides.herokuapp.com/vehicle](https://litrides.herokuapp.com/vehicle)
+
+## `Rationale`
+```
+Unless you have a credit card, you will not be able to participate in the current global ride-share revolution. The Bitcoin Lightning Network offers a fast and cheap way for anybody with a mobile device, to transact and participate in the global economy.
+Litrides is a proof of concept to show that the Lightning Network invoicing system is a great for API services like Smartcar API.
+```
+
+## `User Journey`
+```
+* My name is Alice and I'm a self employed Software Developer. Unfortunaltely, projects have been slow to come as of late and I need to make some extra money to cover my bills. I recently heard about this service called Litrides, where I can rent my car to other invidual and earn a healty amount of crypto currencies. I visited Litrides, signed for an account and made my vehicle available  for short term rent.
+```
+```
+* My name is Bob and I have bad credit. For that reason it's been impossible for me to get an account at Turo or GetAround. Luckily, someone in my social media circle recommended Litrides to me. I don't need a credit card to participate. A little bit of Bitcoin will suffice.
+```
 
 ## Technology
 * [X] [Smartcar API](https://smartcar.com/product/lock-unlock/)
