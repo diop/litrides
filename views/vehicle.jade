@@ -8,7 +8,7 @@ block content
             form(method='post', action='/invoice')
                 div.content
                     h4 Available Rides
-                    input(type="radio", name="product", value='{"name": #{info.make}, "price": 0.01}')
+                    input(type="radio", name="product", value='{"name": "#{info.make}", "price": 0.01}')
                     table(style='width:100%', border='1')
                         thead
                             tr
@@ -20,5 +20,6 @@ block content
                                             th #{info.make}
                                             th #{info.model}
                                             th #{info.year}
-                    p
-                        input(type="submit", class="btn btn-primary", name="Pay With Lightning")
+                    div 
+                        p
+                            input(type="submit", class="btn btn-primary", name="Pay With Lightning")
