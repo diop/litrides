@@ -55,8 +55,12 @@ router.post('/', (request, response, next) => {
 })
 
 // Post --> /invoice/webhook
-router.post('/webhook', (req, res, next) => {
+router.post('/unlock', (req, res, next) => {
     // Deliver car
+    vehicle.unlock()
+        .then(response => {
+        console.log(response);
+      })
 })
 
 module.exports = router
