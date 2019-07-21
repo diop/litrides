@@ -10,16 +10,16 @@ const keypair = btcpay.crypto.load_keypair(new Buffer.from(BTCPAY_PRIV_KEY, 'hex
 const client = new btcpay.BTCPayClient('https://lightning.filipmartinsson.com', keypair, {merchant: BTCPAY_MERCHANT_KEY})
 
 /* get & verify invoice. */
-router.get('/:id', async function(req, res, next) {
+router.get('/:id', async function(request, response, next) {
     // Check if invoice is paid
-    const invoiceId = req.params.id
+    const invoiceId = request.params.id
     client.get_invoice(invoiceId)
     .then(invoice => {
         if(invoice == 'complete' || invoice.status == 'paid') {
             // Deliver ride to customer
-            res.end('<html>Thank you!</html>')
+            response.end('<html>Thank you!</html>')
         } else {
-            res.end('<html>Not paid!</html')
+            response.end('<html>Not paid!</html')
         }
     })
     .catch(err => {
@@ -28,18 +28,28 @@ router.get('/:id', async function(req, res, next) {
 })
 
 /* Create invoice. */
-router.post('/', (req, res, next) => {
-    const product = JSON.parse(req.body.product)
+router.post('/', (request, response, next) => {
+    const product = JSON.parse(request.body.product)
     const dollarAmount = product.price
-    console.log(dollarAmount)
+    const renter = {
+        // Naming comes from Bitpay API naming convention
+        email: request.body.email,
+        name: request.body.name,
+        address1: request.body.address,
+        locality: request.body.city,
+        postalCode: request.body.zipcode,
+        country: request.body.country
+    }
     client.create_invoice({
         price: dollarAmount,
         currency: 'USD',
+        itemDesc: product.name,
+        buyer: renter,
         notificationURL: 'https://litrides.herokuapp.com/invoice/webhook'
     })
     .then(invoice => {
         console.log(invoice)
-        res.render('invoice', {invoiceId: invoice.id})
+        response.render('invoice', {invoiceId: invoice.id})
     })
     .catch(err => console.log(err))
 })
